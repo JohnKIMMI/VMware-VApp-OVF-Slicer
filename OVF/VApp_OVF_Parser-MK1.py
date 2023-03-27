@@ -3,8 +3,6 @@ from xml.dom import minidom
 
 # OVF 파일 경로
 ovf_path = input("INPUT OVF PATH : ")
-#ovf_path = "D:\\VM-Back\\2022-KEPCO-ICDX\\Team01\\descriptor.ovf"
-#ovf_path = "E:\\210번\\NSR-2022\\work-dev.ovf\\work-dev\\work-dev.ovf"
 
 # OVF 파일 파싱
 tree = ET.parse(ovf_path)
