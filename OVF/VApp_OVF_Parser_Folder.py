@@ -6,12 +6,11 @@ import shutil
 ovf_path = input("INPUT OVF PATH : ")
 if ovf_path.startswith('"') and ovf_path.endswith('"'):
     ovf_path = ovf_path[1:-1]
-#ovf_path = "D:\\VM-Back\\2022-KEPCO-ICDX\\Team01\\descriptor.ovf"
+
 directory = os.path.dirname(ovf_path)
 directory = os.path.join(directory, "")
 #print("REsult : ", result_path)
 #print("DIR : ", directory)
-#ovf_path = "E:\\210번\\NSR-2022\\work-dev.ovf\\work-dev\\work-dev.ovf"
 
 # OVF 파일 파싱
 tree = ET.parse(ovf_path)
